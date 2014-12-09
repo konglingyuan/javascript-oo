@@ -73,21 +73,20 @@ var Person = function(name, age) {
   this.name = name;
   this.age= age;
 }
-Person.prototype.workStatus = function() {
+Person.workStatus = function() {
   alert("I am working now!");
 };
 ```
 ####2.2定义实例方法
 定义实例方法是给类实例化后的对象定义方法。该对象方法在对象实例化后才能调用。
 
-给以上定义的类增加一个类方法：
+给以上定义的类增加一个实例方法：
 ```javascript
 var Person = function(name, age) {
   this.name = name;
   this.age= age;
 }
-var person = new Person('Tom', 22);
-person.prototype.workStatus = function() {
+Person.prototype.workStatus = function() {
   alert("I am working now!");
 }
 ```
